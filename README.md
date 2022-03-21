@@ -78,9 +78,9 @@ You are working with a candy shop API that returns `items` and `sales`. You need
 
 ```js
 {
-    item: "Mint Wafers",
+    id: 2,
     price: 1.19,
-    quantity: 2
+    description: "Mint Wafers",
 }
 ```
 
