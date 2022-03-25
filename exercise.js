@@ -7,12 +7,10 @@ function getItemById(items, id) {
 
 function buildTransactions(sales, items) {
     return sales.map(sale => {
-        const item = getItemById(items, sale.itemId)
-
         return {
             ...sale,
-            description: item.description,
-            price: item.price,
+            description: getItemById(items, sale.itemId).description,
+            price: getItemById(items, sale.itemId).price,
         }
     })
 }
